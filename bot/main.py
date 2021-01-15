@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 client = discord.Client()
 
 def aqi(city,state,country):
-    url = 'http://api.airvisual.com/v2/city?city='+city+'&state='+state+'&country='+country+'&key=72a3a307-5f34-45f1-9377-fe2c2bccb5e2'
+    url = 'http://api.airvisual.com/v2/city?city='+city+'&state='+state+'&country='+country+'&key=ADD YOUR KEY HERE'
     r = requests.get(url)
     soup = BeautifulSoup(r.content,'html.parser')
     data = json.loads(soup.decode('utf-8'))
